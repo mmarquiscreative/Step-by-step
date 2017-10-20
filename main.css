@@ -1,8 +1,13 @@
 *{
 font-family: 'Gentium Book Basic', serif;
+    transition-duration: .2s;
+}
+body{
+    margin: 0px;
+    padding: 0px;
 }
 #stageHeader{
-    background-color: #3ed194;
+    background-color: #4dbc8e;
     width: 100vw;
     padding: 1rem;
     color: #fff;
@@ -12,6 +17,7 @@ font-family: 'Gentium Book Basic', serif;
     top: 0;
     display: block;
     overflow: hidden;
+    box-shadow: 0px 2px 5px #424242;
 }
 
 h3{
@@ -24,27 +30,77 @@ h3{
 }
 
 #navBtns{
-    background-color: #dce2e0;
+    background-color: #f0f0f0;
     width: 100vw;
     text-align: center;
     overflow: hidden;
     position: fixed;
     bottom: 0;
+    opacity: .5;
 }
 
-#navBtns > button {
+#navBtns:hover{
+    transition-duration: .7s;
+    opacity:1;
+}
+
+
+/*#navBtns > button {
     font-family: "Open Sans", sans-serif;
     font-size: .7rem;
     margin: 2vh 1vw 2vh 1vw;
     color: #fff;
-    background-color: #3ed194;
+    background-color: #4dbc8e;
+    box-shadow: none;
+}
+*/
+
+button{
+    box-shadow: none !important;
+    font-family: "Open Sans", sans-serif;
+    font-size: .7rem;
+    margin: 2vh 1vw 2vh 1vw;
+    padding: 2vh 3vw;
+    color: #fff;
+    background-color: #4dbc8e;
+    border-radius: 4px;
+    border-top: none;
+    border-left: none;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 4px;
     
+    border-bottom: 1px 1px 1px #424242;
+}
+button:hover:disabled {
+    color: #fff;
+    background-color: #4dbc8e;
+}
+button:active{
+    position: relative;
+    top: 1px;
+    left: 1px;
+    background-color: #008a78 !important;
+    color: #cdf7e5 !important;
+    border-bottom: none;
+    border-right: none;
 }
 
+button:hover{
+    background-color: #95d7bc;
+    color: #008a78;
+}
+
+button:focus{
+    outline: none;
+}
+
+
+
 .content{
+    color: #008a78;
     margin-top: 4rem;
     padding: 1rem;
-        background-color: #dbfcee;
+        background-color: #cdf7e5;
 
 }
 
@@ -71,4 +127,8 @@ h3{
     color: #dbfcee;
     font-size: .8rem;
     margin: 0px 0px;
+}
+
+button:disabled {
+    opacity: .3 !important;
 }
