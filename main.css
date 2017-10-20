@@ -1,0 +1,74 @@
+*{
+font-family: 'Gentium Book Basic', serif;
+}
+#stageHeader{
+    background-color: #3ed194;
+    width: 100vw;
+    padding: 1rem;
+    color: #fff;
+    margin: 0px;
+    line-height: 0rem;
+    position: fixed;
+    top: 0;
+    display: block;
+    overflow: hidden;
+}
+
+h3{
+    font-family: "Open Sans";
+    font-size: 1rem;
+}
+#stage{
+    width: 100vw;
+    height: 95vh;
+}
+
+#navBtns{
+    background-color: #dce2e0;
+    width: 100vw;
+    text-align: center;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+}
+
+#navBtns > button {
+    font-family: "Open Sans", sans-serif;
+    font-size: .7rem;
+    margin: 2vh 1vw 2vh 1vw;
+    color: #fff;
+    background-color: #3ed194;
+    
+}
+
+.content{
+    margin-top: 4rem;
+    padding: 1rem;
+        background-color: #dbfcee;
+
+}
+
+.hidden{
+    display: none;
+}
+
+#interactBox{
+    background-color: #fff;
+    padding: 1rem;
+}
+#stepTitle, #stepNum{
+    display: inline-block;
+  
+}
+#stepTitle{
+    text-align: left;
+    width: 50%
+}
+
+#stepNum{
+    width: 40%;
+    text-align: right;
+    color: #dbfcee;
+    font-size: .8rem;
+    margin: 0px 0px;
+}
